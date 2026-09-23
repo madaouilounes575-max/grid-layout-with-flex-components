@@ -31,15 +31,37 @@ body {
 
 .emoji {
 display: flex;
-    /** I will organize the content in each card first with this property ***/
-  flex-direction: column;
-    /**** i used this one to organize the content vertically.in another words. from top to
-    bottom **/
+ /** I will organize the content in each card first with this property ***/
+flex-direction: column;
+ /**** i used this one to organize the content vertically.in another words. from top to
+bottom **/
 }
-    .icon {
-        order: -1;
-    /**** i need the emoji to appear before the title, so i used this one **/
+.icon {
+   order: -1;
+ /**** i need the emoji to appear before the title, so i used this one **/
 
-    text-align: center;
-    /**** I also need the emogi to be in the centre in each card. */
+ text-align: center;
+/**** I also need the emogi to be in the centre in each card. */
 }
+  /************************************** Grid ****************************************/
+/** now. i will use grid to organize the cards in the page to match the 
+assigment. **/
+.emojis {
+ display: grid;
+  /*** now i will start with this property to organize the emoji cards. *****/
+
+     grid-template-columns: 1fr 1fr;
+  /****i am organizing the emoji boxes to match the assigment    1   2
+                                                                 3   4.****/
+                                                                
+ gap: 1rem;
+  /*** i added some space between the cards becouse they were too close. *****/
+}
+      /******** Button *******/
+/** i wa confused becouse the button in the last box was not in the 
+same line with the other buttons. so i used this property to fix it.and i asked the ai .
+use the right property to put the last button in the same line with others **/
+
+     .emoji a {
+       margin-top: auto;
+     }
